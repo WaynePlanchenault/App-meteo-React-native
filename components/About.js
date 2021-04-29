@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, ActivityIndicator } from "react-native";
 
 const About = () => {
   return (
@@ -13,6 +13,12 @@ const About = () => {
         quas quae numquam aspernatur similique in, tempora repellat amet sit
         nihil nobis neque iste id ut fugit ea, cumque harum!
       </Text>
+      <ActivityIndicator
+        style={style.view}
+        color="#FF0000"
+        size="large"
+        animating={true}
+      />
     </View>
   );
 };
