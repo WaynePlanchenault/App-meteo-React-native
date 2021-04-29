@@ -1,11 +1,13 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 
 const About = () => {
   return (
     // ici j'écris du JSX
-    <View>
-      <Text>A propos de moi</Text>
+    <View style={style.view}>
+      <Text /*style={{ fontSize: 22, marginBottom: 20 }} */>
+        A propos de moi
+      </Text>
       <Text>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus
         quas quae numquam aspernatur similique in, tempora repellat amet sit
@@ -16,3 +18,13 @@ const About = () => {
 };
 
 export default About;
+
+const style = StyleSheet.create({
+  view: {
+    margin: 40,
+  },
+  title: {
+    fontSize: 22,
+    marginBottom: 20,
+  },
+});
